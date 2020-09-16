@@ -37,3 +37,11 @@ address {
   color: #0f0f0f;
   margin: 0px;
 }
+
+.tab-content {
+  --bdr-clr: #ddd;
+  border-left: 1px solid var(--bdr-clr);
+  border-right: 1px solid var(--bdr-clr);
+  border-bottom: 1px solid var(--bdr-clr);
+  padding: 10px;
+}
