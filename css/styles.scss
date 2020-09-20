@@ -72,3 +72,20 @@ body {
     position: absolute;
     bottom: 0;
 }
+
+.modal-header {
+    background-color: $bckg-dark;
+    h3 {
+        color: white;
+    }
+    button {
+        color: floralwhite;
+    }
+    button:hover {
+        color: white;
+    }
+}
+
+.modal-body {
+    background-color: $bckg-pale;
+}

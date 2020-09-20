@@ -61,7 +61,23 @@ body {
   right: 0;
   position: absolute;
   bottom: 0;
-  z-index: 1;
+}
+
+.modal-header {
+  background-color: #512da8;
+}
+.modal-header h3 {
+  color: white;
+}
+.modal-header button {
+  color: floralwhite;
+}
+.modal-header button:hover {
+  color: white;
+}
+
+.modal-body {
+  background-color: #d1c4e9;
 }
 
 /*# sourceMappingURL=styles.css.map */
