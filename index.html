@@ -236,6 +236,14 @@
           <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon"></span>
           </a>
+          <div class="btn-group" id="carouselButton">
+            <button class="btn btn-danger" id="carouselPause">
+              <span class="fa fa-pause"></span>
+            </button>
+            <button class="btn btn-success" id="carouselPlay">
+              <span class="fa fa-play"></span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -343,11 +351,8 @@
               <a
                 href="http://youtube.com/"
                 class="btn btn-social-icon btn-google"
-                ><i class="fa fa-youtube"></i
-              ></a>
-              <a href="mailto:" class="btn btn-social-icon btn-adn"
-                ><i class="fa fa-envelope"></i
-              ></a>
+                ><i class="fa fa-youtube"></i></a>
+              <a href="mailto:" class="btn btn-social-icon btn-adn"><i class="fa fa-envelope"></i></a>
             </div>
           </div>
         </div>
@@ -363,10 +368,18 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- <script>
+
+    <script>
       $(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip();
+        // $('[data-toggle="tooltip"]').tooltip();
+        $('#mycarousel').carousel({interval:2000});
+        $('#carouselPause').click(function() {
+          $('#mycarousel').carousel('pause');
+        });
+        $('#carouselPlay').click(function() {
+          $('#mycarousel').carousel('cycle');
+        });
       });
-    </script> -->
+    </script>
   </body>
 </html>
